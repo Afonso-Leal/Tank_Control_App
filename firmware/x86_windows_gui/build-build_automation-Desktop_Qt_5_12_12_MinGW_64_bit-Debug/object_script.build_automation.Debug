@@ -1,0 +1,14 @@
+debug/behavior.o
+debug/chronometer.o
+debug/sm1.o
+debug/sm2.o
+debug/sm3.o
+debug/sm4.o
+debug/behaviorthread.o
+debug/cedatank.o
+debug/hal.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_cedatank.o
+debug/moc_led.o
+debug/moc_mainwindow.o
