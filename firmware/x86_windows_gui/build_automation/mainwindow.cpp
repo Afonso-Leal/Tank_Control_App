@@ -91,7 +91,7 @@ void MainWindow::PhysicalProcess(){
             tank1_level = 100;
         }
     }
-    if(pin_b1){
+    if(pin_b1 && ui->pump_ene->isChecked()){
         tank2_level += .2;
         tank1_level -= .2;
         if(tank2_level > 100){
@@ -101,7 +101,7 @@ void MainWindow::PhysicalProcess(){
     if(pin_v2){
         if((tank2_level*2)>tank3_level){
             tank2_level -= .2;
-            tank3_level += ((.2/4)*100)/25;
+            tank3_level += .2*4;
             if(tank2_level > 100){
                 tank2_level = 100;
             }
@@ -111,7 +111,7 @@ void MainWindow::PhysicalProcess(){
         }
         if((tank2_level*2)<tank3_level){
             tank2_level += .2;
-            tank3_level -= ((.2/4)*100)/25;
+            tank3_level -= .2*4;
             if(tank2_level > 100){
                 tank2_level = 100;
             }
@@ -123,7 +123,7 @@ void MainWindow::PhysicalProcess(){
     if(pin_h1) temperature+=.02;
     if(!pin_h1) temperature-=.02;
     if(tank2_level)
-        tank2_level -= .01;
+        tank2_level -= (ui->drain_tank_2->text()).toFloat();
     pin_s11 = (tank1_level >= 10);
     pin_s12 = (tank1_level >= 90);
     pin_s21 = (tank2_level >= 10);

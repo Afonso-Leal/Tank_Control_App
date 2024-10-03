@@ -562,6 +562,42 @@
      <string>set all 0</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="drain_tank_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>41</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>tank 2 drain</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="pump_ene">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>93</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>enable pump</string>
+    </property>
+   </widget>
    <zorder>line_2</zorder>
    <zorder>v1_led</zorder>
    <zorder>label</zorder>
@@ -600,6 +636,9 @@
    <zorder>case_4</zorder>
    <zorder>case_5</zorder>
    <zorder>case_6</zorder>
+   <zorder>drain_tank_2</zorder>
+   <zorder>label_12</zorder>
+   <zorder>pump_ene</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
